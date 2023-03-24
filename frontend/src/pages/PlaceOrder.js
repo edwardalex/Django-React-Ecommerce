@@ -103,7 +103,7 @@ const PlaceOrder = ({ history }) => {
                         </Col>
 
                         <Col md={4}>
-                          {item.qty} X Kes. {item.price} = Kes.
+                          {item.qty} X ${item.price} = Kes.
                           {(item.qty * item.price).toFixed(2)}
                         </Col>
                       </Row>
@@ -125,28 +125,28 @@ const PlaceOrder = ({ history }) => {
               <ListGroup.Item>
                 <Row>
                   <Col>Items:</Col>
-                  <Col>Kes. {cart.itemsPrice}</Col>
+                  <Col>${cart.itemsPrice}</Col>
                 </Row>
               </ListGroup.Item>
 
               <ListGroup.Item>
                 <Row>
                   <Col>Shipping:</Col>
-                  <Col>Kes. {cart.shippingPrice}</Col>
+                  <Col>${cart.shippingPrice}</Col>
                 </Row>
               </ListGroup.Item>
 
               <ListGroup.Item>
                 <Row>
                   <Col>Tax:</Col>
-                  <Col>Kes. {cart.taxPrice}</Col>
+                  <Col>${cart.taxPrice}</Col>
                 </Row>
               </ListGroup.Item>
 
               <ListGroup.Item>
                 <Row>
                   <Col>Total:</Col>
-                  <Col>Kes. {cart.totalPrice}</Col>
+                  <Col>${cart.totalPrice}</Col>
                 </Row>
               </ListGroup.Item>
 
